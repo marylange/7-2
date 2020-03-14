@@ -71,21 +71,17 @@
         height: 50px;
       }
 
-      /* Após 1 segundo do carregamento da página, faça a bola verde ir da
-      borda esquerda para a borda direita e voltar ao longo de 1 segundo por trecho.
-      Utilize o keyframe criado para o exercício número 1 para esse exercício também,
-      ou seja, ambos os exercícios compartilharão o keyframe. */
-      .exercise-5 {
-        animation-name: verde;
+      /* Faça a bola verde ir da borda esquerda para a borda direita enquanto o
+      mouse estiver dentro do elemento <section> do exercício. A duração do
+      evento deve ser de 5 segundos. */
+      #section-5:hover #exercise-5 {
+        animation-name: exercise-5;
         animation-delay: 1s;
-        animation-duration: 1s;
-        animation-direction: alternate;
-        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-play-state: running;
       }
 
-      
-
-      @keyframes verde {
+      @keyframes exercise-5 {
         0% {
           margin-left: 0%;
         }
